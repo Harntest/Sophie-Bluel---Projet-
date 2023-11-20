@@ -1,14 +1,3 @@
-// TODO
-// 1. Ajouts projet
-// Appel api fetch des projet
-// Mettre les projets dans la modal avec un template literals
-
-// 2. Suppression projet
-// Avec api fetch et put (voir documentation swagger), supprimmer le projet au click du btn corbeil
-// La suppression du projet l'enlève aussi de la page home
-// Pour gérer les projets dans la home et la modale il nous faut un tableau avec les projets qui provienne de l'api
-// C'est ce tableau qu'on vas itérer pour faire la grille des projets et donc ce même tableau qu'on actualisaera avec la modification de l'api
-
 const projectsContainer = document.querySelector('.modal-projects')
 
 if (localStorage.getItem("utilisateur") !== null) {
@@ -35,7 +24,9 @@ async function getWorksIntoModal() {
                 projectsContainer.innerHTML += `
                 <article>
                     <div class="btns-action">
-                    <button class="modal-btn-delete"><i class="fa fa-light fa-trash-can delete-icon" id="delete-icon-8"></i></button>
+                    <button class="modal-btn-delete">
+                         <i class="fa fa-light fa-trash-can delete-icon" id="delete-icon-8"></i>
+                    </button>
                     </div>
                     <figure data-category="${work.category.id}" data-projectid="${work.id}">
                         <img src="${work.imageUrl}" alt="${work.title}">
@@ -51,6 +42,8 @@ async function getWorksIntoModal() {
 }
 
 getWorksIntoModal();
+
+
 
 
 // function de suppression d'image

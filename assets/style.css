@@ -339,15 +339,47 @@ footer {
 }
 
 .modalContainer{
-	background-color: #ffff;
-	border-radius: .5rem;
-	display: block;
-	max-width: 730px;
-	padding: 1rem;
-	position: relative;
-	z-index: 999;
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 650px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+// Modification necessaire
+.modalContainer article{
+	width: 237px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: #1D6154;
+  color: #FFF;
+  text-align: center;
+  font-family: Syne;
+  font-size: 14px;
+  border-top: 1px solid #B3B3B3;
+  cursor: pointer;
+  border-style: none;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.modalContainer article, img {
+	position: relative;
+	width: 91%;
+	object-position: center;
+	object-fit: cover;
+	height: 13vh;
+}
+
+Jusque la //
 .modal-btn-delete 
 {
 	background-color: #000;
@@ -359,6 +391,7 @@ footer {
 	right: 12px;
 	cursor: pointer;
 	color: white;
+	border: none;
 }	
 .modalContainer .modal-btn-close{
 	position: absolute;
@@ -373,14 +406,26 @@ footer {
 }
 
 .modalContainer h2{
+	color: #000;
 	text-align: center;
+	font-family: Work Sans;
 	font-size: 26px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 35px;
+	margin-bottom: 40px;
+	
 }
 
 .modal-projects{
-	display: flex;
-	flex-wrap: wrap;
-	gap: .5rem;
+	display: grid;
+  justify-content: flex-start;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
 .modal-projects article{
@@ -389,10 +434,11 @@ footer {
 }
 
 .modal-projects article figure img{
-	width: 100%;
 	object-fit: cover;
 	display: block;
 	margin: auto;
+	width: 78.123px;
+	height: 104.08px;
 }
 
 .modal-projects article .btns-action{
@@ -401,6 +447,25 @@ footer {
 	right: .5rem;
 }
 
+.modal-add-img{
+	width: 237px;
+	height: 36px;
+	flex-shrink: 0;
+	border-radius: 60px;
+	background: #1D6154;
+	color: #FFF;
+	text-align: center;
+	font-family: Syne;
+	font-size: 14px;
+	border-top: 1px solid #B3B3B3;
+	  border-top-style: solid;
+	cursor: pointer;
+	border-style: none;
+	margin-top: 40px;
+	margin-bottom: 20px;
+  }
+
+}
 .modal .overlay{
 	background-color: rgba(0, 0, 0, 0.75);
 	display: block;
