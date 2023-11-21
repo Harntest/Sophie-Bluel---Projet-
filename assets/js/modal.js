@@ -1,5 +1,16 @@
 const projectsContainer = document.querySelector('.modal-projects')
 
+const closeModalButtons = document.querySelectorAll(".modal-btn-close");
+closeModalButtons.forEach((button) => {
+    button.addEventListener("click", closeModal);
+});
+function closeModal() {
+    const modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
+
+
+
 if (localStorage.getItem("utilisateur") !== null) {
     // L'utilisateur est connecté, donc active la barre dynamique.
     

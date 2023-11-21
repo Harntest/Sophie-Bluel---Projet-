@@ -344,7 +344,7 @@ footer {
   padding: 20px;
   border: 1px solid #888;
   border-radius: 10px;
-  width: 80%;
+  width: 100%;
   max-width: 650px;
   text-align: center;
   position: relative;
@@ -371,7 +371,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.modalContainer article, img {
+.modalContainer article img {
 	position: relative;
 	width: 91%;
 	object-position: center;
@@ -421,7 +421,7 @@ Jusque la //
 .modal-projects{
 	display: grid;
   justify-content: flex-start;
-  width: 80%;
+  width: 100%;
   margin: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 10px;
